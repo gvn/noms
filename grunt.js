@@ -39,7 +39,8 @@ module.exports = function(grunt) {
             globals: {
                 $: true,
                 CFV: true,
-                console: true
+                console: true,
+                d3: true
             }
         },
         uglify: {}
