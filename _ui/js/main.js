@@ -5,6 +5,8 @@ if (typeof window.CFV !== 'undefined') {
 window.CFV = {
     init: function () {
         var self = this;
+
+        self.fetchData();
     },
     fetchData: function () {
     	var self = this;
