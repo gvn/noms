@@ -9,20 +9,20 @@ window.CFV = {
         self.fetchData();
     },
     fetchData: function () {
-    	var self = this;
+        var self = this;
 
-    	$.ajax({
-			url: '_ui/json/feeder.json',
-			type: 'GET',
-			dataType: 'json',
-			complete: function(xhr, textStatus) {},
-			success: function(data, textStatus, xhr) {
-				self.db = data;
-			},
-			error: function(xhr, textStatus, errorThrown) {
-				console.error('fetchData failed ', errorThrown);
-			}
-    	});
+        $.ajax({
+            url: '_ui/json/feeder.json',
+            type: 'GET',
+            dataType: 'json',
+            complete: function(xhr, textStatus) {},
+            success: function(data, textStatus, xhr) {
+                self.db = data;
+            },
+            error: function(xhr, textStatus, errorThrown) {
+                console.error('fetchData failed ', errorThrown);
+            }
+        });
     }
 };
 

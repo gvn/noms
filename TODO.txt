@@ -1,0 +1,1 @@
+- Use debug/dev flag on index to emit non built files
