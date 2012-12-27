@@ -5,21 +5,21 @@ module.exports = function(grunt) {
     grunt.initConfig({
         meta: {
             version: '0.1.0',
-            banner: 'Catfeedr Visualizr'
+            banner: 'Noms'
         },
         lint: {
-            files: ['grunt.js', '_ui/js/*.js']
+            files: ['_ui/js/*.js']
         },
         concat: {
             dist: {
                 src: ['_ui/js/*.js'],
-                dest: '_ui/built/catfeedr.js'
+                dest: '_ui/built/app.js'
             }
         },
         min: {
             dist: {
-                src: ['_ui/built/catfeedr.js'],
-                dest: '_ui/built/catfeedr.min.js'
+                src: ['_ui/built/app.js'],
+                dest: '_ui/built/app.min.js'
             }
         },
         jshint: {
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
             },
             globals: {
                 $: true,
-                CFV: true,
+                NOMS: true,
                 console: true,
                 d3: true
             }

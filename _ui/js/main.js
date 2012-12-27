@@ -1,8 +1,8 @@
-if (typeof window.CFV !== 'undefined') {
-    throw 'CFV already in use.';
+if (typeof window.NOMS !== 'undefined') {
+    throw 'NOMS already in use.';
 }
 
-window.CFV = {
+window.NOMS = {
     init: function () {
         var self = this;
 
@@ -82,7 +82,7 @@ window.CFV = {
 
         circles = self.svg.selectAll("circle").data(dataset).enter().append("circle");
 
-        circles.attr("fill", "#c00");
+        circles.attr("fill", "#50C4DE");
 
         circles.attr("cx", function(d, i) {
             return d.getHours() * (self.width / 24);
@@ -93,11 +93,11 @@ window.CFV = {
         });
 
         circles.attr("r", function(d) {
-            return 10;
+            return Math.random() * 10;
         });
     }
 };
 
 $(document).ready(function () {
-    CFV.init();
+    NOMS.init();
 });

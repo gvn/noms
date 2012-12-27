@@ -17,13 +17,24 @@ body {
 
 svg {
     shape-rendering: geometricPrecision; /* Smoother */
+    border: 1px solid #ccc;
 }
 
 h1,h2,h3,h4,h5,h6 { font-weight: 900; }
 
+header {
+    margin-bottom: 20px;
+}
+
 h1 {
-    font-size: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
     line-height: 1em;
+    color: #ccc;
+    font-weight: 100;
+    letter-spacing: 0.33em;
+    margin: 0;
+    padding: 0;
 }
 
 h2 {
